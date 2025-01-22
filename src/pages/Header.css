@@ -6,6 +6,10 @@
   background-color: white;
   color: white;
   border-bottom: 2px solid black;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
