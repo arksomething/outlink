@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 20px;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.outlink-image {
+  max-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.home-button {
+  margin-top: 20px;
+}
+

@@ -1,6 +1,13 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Header  from './pages/HEader';
+import Product from './pages/Product';
+import Pricing from './pages/Pricing';
+import Resources from './pages/Resources';
+
 import './App.css'
 
 function App() {
@@ -8,20 +15,15 @@ function App() {
 
   return (
     <>
-      <div>
-      <h1>OutLink</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/resources" element={<Resources />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
