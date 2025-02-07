@@ -7,6 +7,8 @@ import Header  from './pages/Header';
 import Product from './pages/Product';
 import Pricing from './pages/Pricing';
 import Resources from './pages/Resources';
+import Success from './pages/Success';
+import Canceled from './pages/Canceled';
 
 import './App.css'
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/success" element={<Success />} />
+            <Route path="/canceled" element={<Canceled />} />
           </Routes>
         </div>
       </BrowserRouter>
