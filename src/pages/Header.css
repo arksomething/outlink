@@ -91,3 +91,8 @@ nav a:hover {
     display: none; /* Hide the dropdown when the screen is wider than 750px */
   }
 }
+
+.icon128 {
+  height: 40px; /* Adjust this value to match the height of the other logo */
+  width: auto; /* Maintain aspect ratio */
+}

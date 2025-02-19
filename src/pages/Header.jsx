@@ -30,7 +30,7 @@ function Header() {
           <div className="header-wrapper">
             <div className="header-left">
               <Link to="/">
-                <img src={logo} alt="Logo" className="logo" />
+                <img src={isMobile ? '/Icon128.png' : logo} alt="Logo" className="logo icon128" />
               </Link>
               <div className="nav-links">
                 {isMobile ? (
