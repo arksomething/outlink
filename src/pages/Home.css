@@ -2,12 +2,8 @@
   display: flex;
   align-items: center;
   margin: 0px;
-  padding: 20px;
-}
-
-.content {
-  flex: 1;
-  margin-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .outlink-image {
@@ -21,12 +17,23 @@
     align-items: flex-start;
   }
 
-  .content {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-content, .right-content {
+    align-items: flex-start;
   }
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
 .download-button {
   display: inline-block;
   padding: 10px 20px;
@@ -44,3 +51,18 @@
   margin-top: 20px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.right-content {
+  flex: 1;
+}
